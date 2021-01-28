@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0D884A25C2534000F1096D /* BookChecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E0D884825C2534000F1096D /* BookChecker.xcdatamodeld */; };
+		0E0D885F25C2562B00F1096D /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0D885E25C2562B00F1096D /* ItemList.swift */; };
+		0E0D886425C2573C00F1096D /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0D886325C2573C00F1096D /* BookList.swift */; };
+		0E0D886925C258E300F1096D /* ShowToDoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0D886825C258E300F1096D /* ShowToDoListController.swift */; };
+		0E0D887125C2599D00F1096D /* AddToDoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0D887025C2599D00F1096D /* AddToDoListController.swift */; };
+		0E0D887625C259C600F1096D /* ShowBookListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0D887525C259C500F1096D /* ShowBookListController.swift */; };
+		0E0D887B25C259EE00F1096D /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0D887A25C259EE00F1096D /* AddBookController.swift */; };
+		0E0D888025C25A6E00F1096D /* ShowPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0D887F25C25A6E00F1096D /* ShowPDFViewController.swift */; };
 		0E79CF2D25BEDD230057FA46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF2C25BEDD230057FA46 /* AppDelegate.swift */; };
 		0E79CF2F25BEDD230057FA46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF2E25BEDD230057FA46 /* SceneDelegate.swift */; };
-		0E79CF3125BEDD230057FA46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF3025BEDD230057FA46 /* ViewController.swift */; };
 		0E79CF3425BEDD230057FA46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E79CF3225BEDD230057FA46 /* Main.storyboard */; };
 		0E79CF3725BEDD230057FA46 /* BookChecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF3525BEDD230057FA46 /* BookChecker.xcdatamodeld */; };
 		0E79CF3925BEDD230057FA46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E79CF3825BEDD230057FA46 /* Assets.xcassets */; };
 		0E79CF3C25BEDD230057FA46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E79CF3A25BEDD230057FA46 /* LaunchScreen.storyboard */; };
 		0E79CF4725BEDD240057FA46 /* BookCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF4625BEDD240057FA46 /* BookCheckerTests.swift */; };
 		0E79CF5225BEDD240057FA46 /* BookCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF5125BEDD240057FA46 /* BookCheckerUITests.swift */; };
-		0E79CF6325BEDFB50057FA46 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF6225BEDFB50057FA46 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0D884925C2534000F1096D /* BookChecker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookChecker.xcdatamodel; sourceTree = "<group>"; };
+		0E0D885E25C2562B00F1096D /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		0E0D886325C2573C00F1096D /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		0E0D886825C258E300F1096D /* ShowToDoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowToDoListController.swift; sourceTree = "<group>"; };
+		0E0D887025C2599D00F1096D /* AddToDoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoListController.swift; sourceTree = "<group>"; };
+		0E0D887525C259C500F1096D /* ShowBookListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBookListController.swift; sourceTree = "<group>"; };
+		0E0D887A25C259EE00F1096D /* AddBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookController.swift; sourceTree = "<group>"; };
+		0E0D887F25C25A6E00F1096D /* ShowPDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPDFViewController.swift; sourceTree = "<group>"; };
 		0E79CF2925BEDD230057FA46 /* BookChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E79CF2C25BEDD230057FA46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E79CF2E25BEDD230057FA46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E79CF3025BEDD230057FA46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E79CF3325BEDD230057FA46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E79CF3625BEDD230057FA46 /* BookChecker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookChecker.xcdatamodel; sourceTree = "<group>"; };
 		0E79CF3825BEDD230057FA46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,7 +65,6 @@
 		0E79CF4D25BEDD240057FA46 /* BookCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E79CF5125BEDD240057FA46 /* BookCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCheckerUITests.swift; sourceTree = "<group>"; };
 		0E79CF5325BEDD240057FA46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E79CF6225BEDFB50057FA46 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0D883025C2511700F1096D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E0D886825C258E300F1096D /* ShowToDoListController.swift */,
+				0E0D887025C2599D00F1096D /* AddToDoListController.swift */,
+				0E0D887525C259C500F1096D /* ShowBookListController.swift */,
+				0E0D887A25C259EE00F1096D /* AddBookController.swift */,
+				0E0D887F25C25A6E00F1096D /* ShowPDFViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E0D883125C251E300F1096D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E79CF3A25BEDD230057FA46 /* LaunchScreen.storyboard */,
+				0E79CF3225BEDD230057FA46 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E0D883B25C2525500F1096D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E0D884825C2534000F1096D /* BookChecker.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E0D884F25C2544400F1096D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0E0D885E25C2562B00F1096D /* ItemList.swift */,
+				0E0D886325C2573C00F1096D /* BookList.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		0E79CF2025BEDD230057FA46 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +153,15 @@
 		0E79CF2B25BEDD230057FA46 /* BookChecker */ = {
 			isa = PBXGroup;
 			children = (
+				0E0D883B25C2525500F1096D /* Model */,
+				0E0D883125C251E300F1096D /* View */,
+				0E0D883025C2511700F1096D /* Controller */,
+				0E0D884F25C2544400F1096D /* Class */,
 				0E79CF2C25BEDD230057FA46 /* AppDelegate.swift */,
 				0E79CF2E25BEDD230057FA46 /* SceneDelegate.swift */,
-				0E79CF3025BEDD230057FA46 /* ViewController.swift */,
-				0E79CF3225BEDD230057FA46 /* Main.storyboard */,
 				0E79CF3825BEDD230057FA46 /* Assets.xcassets */,
-				0E79CF3A25BEDD230057FA46 /* LaunchScreen.storyboard */,
 				0E79CF3D25BEDD230057FA46 /* Info.plist */,
 				0E79CF3525BEDD230057FA46 /* BookChecker.xcdatamodeld */,
-				0E79CF6225BEDFB50057FA46 /* test.swift */,
 			);
 			path = BookChecker;
 			sourceTree = "<group>";
@@ -264,10 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0D884A25C2534000F1096D /* BookChecker.xcdatamodeld in Sources */,
 				0E79CF3725BEDD230057FA46 /* BookChecker.xcdatamodeld in Sources */,
-				0E79CF3125BEDD230057FA46 /* ViewController.swift in Sources */,
 				0E79CF2D25BEDD230057FA46 /* AppDelegate.swift in Sources */,
-				0E79CF6325BEDFB50057FA46 /* test.swift in Sources */,
+				0E0D887625C259C600F1096D /* ShowBookListController.swift in Sources */,
+				0E0D887B25C259EE00F1096D /* AddBookController.swift in Sources */,
+				0E0D886425C2573C00F1096D /* BookList.swift in Sources */,
+				0E0D885F25C2562B00F1096D /* ItemList.swift in Sources */,
+				0E0D887125C2599D00F1096D /* AddToDoListController.swift in Sources */,
+				0E0D886925C258E300F1096D /* ShowToDoListController.swift in Sources */,
+				0E0D888025C25A6E00F1096D /* ShowPDFViewController.swift in Sources */,
 				0E79CF2F25BEDD230057FA46 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +653,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		0E0D884825C2534000F1096D /* BookChecker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0E0D884925C2534000F1096D /* BookChecker.xcdatamodel */,
+			);
+			currentVersion = 0E0D884925C2534000F1096D /* BookChecker.xcdatamodel */;
+			path = BookChecker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		0E79CF3525BEDD230057FA46 /* BookChecker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
