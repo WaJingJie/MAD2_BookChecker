@@ -9,9 +9,9 @@ import Foundation
 
 class ItemList{
     var listTitle:String
-    var listItem:String
-    init(listtitle:String, listitem:String){
+    var listContent:String
+    init(listtitle:String, listcontent:String){
         listTitle = listtitle;
-        listItem = listitem;
+        listContent = listcontent;
     }
 }
