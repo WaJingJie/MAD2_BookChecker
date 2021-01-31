@@ -23,6 +23,7 @@
 		0E79CF3C25BEDD230057FA46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E79CF3A25BEDD230057FA46 /* LaunchScreen.storyboard */; };
 		0E79CF4725BEDD240057FA46 /* BookCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF4625BEDD240057FA46 /* BookCheckerTests.swift */; };
 		0E79CF5225BEDD240057FA46 /* BookCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF5125BEDD240057FA46 /* BookCheckerUITests.swift */; };
+		0EF0451E25C68A8200050136 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0451D25C68A8200050136 /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		0E79CF4D25BEDD240057FA46 /* BookCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E79CF5125BEDD240057FA46 /* BookCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCheckerUITests.swift; sourceTree = "<group>"; };
 		0E79CF5325BEDD240057FA46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF0451D25C68A8200050136 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				0E17C28625C54A4400773088 /* AddContentController.swift */,
 				0E0D886825C258E300F1096D /* ShowToDoListController.swift */,
 				0E17C28C25C54AEC00773088 /* ContentController.swift */,
+				0EF0451D25C68A8200050136 /* ContentViewController.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				0E79CF2D25BEDD230057FA46 /* AppDelegate.swift in Sources */,
 				0E0D887625C259C600F1096D /* ShowBookListController.swift in Sources */,
 				0E0D887B25C259EE00F1096D /* AddBookController.swift in Sources */,
+				0EF0451E25C68A8200050136 /* ContentViewController.swift in Sources */,
 				0E0D886425C2573C00F1096D /* BookList.swift in Sources */,
 				0E17C28D25C54AEC00773088 /* ContentController.swift in Sources */,
 				0E0D885F25C2562B00F1096D /* ItemList.swift in Sources */,

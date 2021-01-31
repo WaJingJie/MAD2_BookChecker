@@ -11,6 +11,8 @@ class ShowToDoListController: UITableViewController{
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var itemList:[ItemList] = []
+    var contentToSend: ItemList?
+    var itemPath:Int!
     let contentController:ContentController = ContentController();
     
     override func viewDidLoad() {
@@ -38,5 +40,25 @@ class ShowToDoListController: UITableViewController{
         cell.textLabel!.text = "\(items.listTitle)"
         
         return cell
+    }
+    
+    // clickable sections
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        contentToSend = itemList[indexPath.row]
+        itemPath = indexPath.item
+        print("\(contentToSend!.listTitle)")
+        
+        performSegue(withIdentifier: "contentSegue", sender: contentToSend)
+    }
+    
+    @IBAction func btn_Add(_ sender: Any) {
+        performSegue(withIdentifier: "addContentSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ContentViewController, let contentToSend = sender as? ItemList{
+            vc.contentView = contentToSend
+            vc.itemPath = itemPath
+        }
     }
 }

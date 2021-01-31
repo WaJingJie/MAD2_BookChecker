@@ -20,12 +20,16 @@ class AddContentController: UIViewController{
     }
     
     @IBAction func btn_AddContent(_ sender: Any) {
-        if(txt_Title.text != ""){
-            if(txt_Content.text != ""){
-                contentController.Add(newContent: ItemList(listtitle: txt_Title.text!, listcontent: txt_Content.text!))
-            }else{
-                contentController.Add(newContent: ItemList(listtitle: txt_Title.text!, listcontent: ""))
-            }
+        //Always creates a Title for the User
+        if(txt_Title.text == ""){
+            txt_Title.text = "No Title"
+        }
+        
+        //Check if Content is Empty
+        if(txt_Content.text != ""){
+            contentController.Add(newContent: ItemList(listtitle: txt_Title.text!, listcontent: txt_Content.text!))
+        }else{
+            contentController.Add(newContent: ItemList(listtitle: txt_Title.text!, listcontent: ""))
         }
         
         txt_Title.text = ""
