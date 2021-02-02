@@ -18,10 +18,11 @@ class ShowPDFViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //stores the pdf file name as a string
         pdf = contentView?.bookTitle
         
         let pdfView = PDFView()
-    
+        
         pdfView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(pdfView)
         
@@ -36,6 +37,7 @@ class ShowPDFViewController: UIViewController{
         
         pdfView.displayDirection = .vertical
         
+        //thumbnails for the pages of the pdf viewr
         let thumbnailVIew = PDFThumbnailView()
         thumbnailVIew.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(thumbnailVIew)
@@ -56,8 +58,6 @@ class ShowPDFViewController: UIViewController{
         let document = PDFDocument(url: pdfPath)
         
         pdfView.document = document
-        
-        
     }
     
     func endSession() {

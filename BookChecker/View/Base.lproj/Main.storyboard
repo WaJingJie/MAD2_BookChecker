@@ -270,13 +270,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH7-fA-tIk">
-                                <rect key="frame" x="129" y="387" width="156" height="30"/>
+                                <rect key="frame" x="129" y="451" width="156" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add from local storage">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="importPDF:" destination="ow1-15-xEW" eventType="touchUpInside" id="9rS-68-rpH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0u-WD-Ffe">
+                                <rect key="frame" x="168" y="393" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add via link">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DIf-sn-Cvw" kind="show" id="WdJ-e3-FID"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -288,6 +298,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDj-6Q-85h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2454" y="256"/>
+        </scene>
+        <!--Add Book Controller-->
+        <scene sceneID="ix3-Vg-ZzR">
+            <objects>
+                <viewController id="DIf-sn-Cvw" customClass="AddBookController" customModule="BookChecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kcq-fi-Vbs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PDF url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D0r-2J-D19">
+                                <rect key="frame" x="10" y="280" width="394" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3k-eQ-wUI">
+                                <rect key="frame" x="184" y="375" width="47" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="importUrl:" destination="DIf-sn-Cvw" eventType="touchUpInside" id="C5e-tp-kWz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nEB-Nk-bLS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D0r-2J-D19" firstAttribute="leading" secondItem="nEB-Nk-bLS" secondAttribute="leading" constant="10" id="CBz-D1-lVG"/>
+                            <constraint firstItem="D0r-2J-D19" firstAttribute="top" secondItem="nEB-Nk-bLS" secondAttribute="top" constant="192" id="JAY-rm-P3H"/>
+                            <constraint firstItem="nEB-Nk-bLS" firstAttribute="trailing" secondItem="D0r-2J-D19" secondAttribute="trailing" constant="10" id="WEn-Zn-z6T"/>
+                            <constraint firstItem="nEB-Nk-bLS" firstAttribute="trailing" secondItem="F3k-eQ-wUI" secondAttribute="trailing" constant="183" id="XbP-qP-9Qv"/>
+                            <constraint firstItem="nEB-Nk-bLS" firstAttribute="bottom" secondItem="F3k-eQ-wUI" secondAttribute="bottom" constant="394" id="dZT-z2-BoU"/>
+                            <constraint firstItem="F3k-eQ-wUI" firstAttribute="leading" secondItem="nEB-Nk-bLS" secondAttribute="leading" constant="184" id="u7e-wX-fOk"/>
+                            <constraint firstItem="F3k-eQ-wUI" firstAttribute="top" secondItem="D0r-2J-D19" secondAttribute="bottom" constant="58" id="udB-wv-IRm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lBU-2a-RO6"/>
+                    <connections>
+                        <outlet property="urlLink" destination="D0r-2J-D19" id="ZWs-oI-5cz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8RZ-Uv-kZG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3292.753623188406" y="255.80357142857142"/>
         </scene>
         <!--Books-->
         <scene sceneID="RIo-vX-BT4">
