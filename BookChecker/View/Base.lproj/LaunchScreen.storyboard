@@ -16,17 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="books.vertical" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bNi-Cp-Af5">
-                                <rect key="frame" x="87" y="109" width="240" height="316"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NgeeAnnLogo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="4tq-V7-lRs">
+                                <rect key="frame" x="25" y="582" width="365" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BookChecker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upf-wM-HkB">
-                                <rect key="frame" x="87" y="404" width="240" height="88"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainImage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="bNi-Cp-Af5">
+                                <rect key="frame" x="51" y="79" width="312" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -38,7 +35,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="books.vertical" catalog="system" width="128" height="103"/>
+        <image name="MainImage.jpeg" width="720" height="778"/>
+        <image name="NgeeAnnLogo.jpeg" width="1600" height="491"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

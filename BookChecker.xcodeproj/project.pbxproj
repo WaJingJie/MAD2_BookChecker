@@ -24,6 +24,8 @@
 		0E79CF3C25BEDD230057FA46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E79CF3A25BEDD230057FA46 /* LaunchScreen.storyboard */; };
 		0E79CF4725BEDD240057FA46 /* BookCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF4625BEDD240057FA46 /* BookCheckerTests.swift */; };
 		0E79CF5225BEDD240057FA46 /* BookCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79CF5125BEDD240057FA46 /* BookCheckerUITests.swift */; };
+		0EC5005825C948CF00956E65 /* MainImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0EC5005725C948CF00956E65 /* MainImage.jpeg */; };
+		0EC5005D25C9499800956E65 /* NgeeAnnLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0EC5005C25C9499800956E65 /* NgeeAnnLogo.jpeg */; };
 		0EF0451E25C68A8200050136 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0451D25C68A8200050136 /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		0E79CF4D25BEDD240057FA46 /* BookCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E79CF5125BEDD240057FA46 /* BookCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCheckerUITests.swift; sourceTree = "<group>"; };
 		0E79CF5325BEDD240057FA46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EC5005725C948CF00956E65 /* MainImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MainImage.jpeg; sourceTree = "<group>"; };
+		0EC5005C25C9499800956E65 /* NgeeAnnLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NgeeAnnLogo.jpeg; sourceTree = "<group>"; };
 		0EF0451D25C68A8200050136 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +172,7 @@
 		0E79CF2B25BEDD230057FA46 /* BookChecker */ = {
 			isa = PBXGroup;
 			children = (
+				0EC5005325C948C200956E65 /* Images */,
 				0E0D883B25C2525500F1096D /* CoreDataModel */,
 				0E0D883125C251E300F1096D /* View */,
 				0E0D883025C2511700F1096D /* Controller */,
@@ -196,6 +201,15 @@
 				0E79CF5325BEDD240057FA46 /* Info.plist */,
 			);
 			path = BookCheckerUITests;
+			sourceTree = "<group>";
+		};
+		0EC5005325C948C200956E65 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0EC5005C25C9499800956E65 /* NgeeAnnLogo.jpeg */,
+				0EC5005725C948CF00956E65 /* MainImage.jpeg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC5005D25C9499800956E65 /* NgeeAnnLogo.jpeg in Resources */,
 				0E79CF3C25BEDD230057FA46 /* LaunchScreen.storyboard in Resources */,
 				0E79CF3925BEDD230057FA46 /* Assets.xcassets in Resources */,
+				0EC5005825C948CF00956E65 /* MainImage.jpeg in Resources */,
 				0E79CF3425BEDD230057FA46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
