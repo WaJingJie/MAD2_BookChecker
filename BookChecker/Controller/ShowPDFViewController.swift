@@ -13,11 +13,12 @@ class ShowPDFViewController: UIViewController{
     var contentView:BookList?
     var content:BookList?
     var itemPath:Int!
-    
+    var pdf:String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var pdf:String = contentView!.bookTitle
+        pdf = contentView?.bookTitle
         
         let pdfView = PDFView()
     

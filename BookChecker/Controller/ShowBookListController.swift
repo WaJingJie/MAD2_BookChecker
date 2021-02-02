@@ -47,7 +47,7 @@ class ShowBookListController: UITableViewController{
         itemPath = indexPath.item
         print("\(contentToSend!.bookTitle)")
         
-        performSegue(withIdentifier: "contentSegue", sender: contentToSend)
+        performSegue(withIdentifier: "bookSegue", sender: contentToSend)
     }
     
     @IBAction func btn_Add(_ sender: Any) {

@@ -20,7 +20,6 @@
                     <connections>
                         <segue destination="AeC-VG-ExD" kind="relationship" relationship="viewControllers" id="i07-8x-ZY4"/>
                         <segue destination="o7S-NB-n2g" kind="relationship" relationship="viewControllers" id="bTS-kQ-vEU"/>
-                        <segue destination="JKQ-Ru-0dI" kind="relationship" relationship="viewControllers" id="B4s-IW-TZi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0I-JS-MNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,9 +239,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="adZ-0b-VaM" kind="show" identifier="contentSegue" id="4ga-vd-jiy"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -257,6 +253,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="JE2-WL-rT9" kind="presentation" identifier="bookSegue" id="daW-t4-uke"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBZ-PF-qhp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDj-6Q-85h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2426" y="248"/>
+            <point key="canvasLocation" x="2454" y="256"/>
         </scene>
         <!--Books-->
         <scene sceneID="RIo-vX-BT4">
@@ -309,51 +308,25 @@
             </objects>
             <point key="canvasLocation" x="714" y="256"/>
         </scene>
-        <!--Currently Reading-->
-        <scene sceneID="4nJ-UB-XzU">
+        <!--ShowPDF View Controller-->
+        <scene sceneID="sih-sg-ZgN">
             <objects>
-                <viewController id="adZ-0b-VaM" customClass="ShowPDFViewController" customModule="BookChecker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VJ5-UU-Xcc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="JE2-WL-rT9" customClass="ShowPDFViewController" customModule="BookChecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K4J-cE-DVl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="sa8-2W-xi2"/>
+                        <viewLayoutGuide key="safeArea" id="T13-MD-joX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Currently Reading" id="Ki6-3g-byA">
-                        <barButtonItem key="leftBarButtonItem" title="Back" image="arrow.backward" catalog="system" id="mec-qb-uuK"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="oau-bO-ZZp"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Szx-st-ZSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUd-Jt-PfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1621.7391304347827" y="977.67857142857133"/>
-        </scene>
-        <!--Read-->
-        <scene sceneID="8e2-Zy-hSb">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JKQ-Ru-0dI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Read" image="bookmark" catalog="system" id="NNl-5k-7Aj"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eDd-lu-u2k">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="adZ-0b-VaM" kind="relationship" relationship="rootViewController" id="EA8-vi-Yqx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nbj-yM-w8J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="711.59420289855075" y="977.67857142857133"/>
+            <point key="canvasLocation" x="1625" y="968"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="4ga-vd-jiy"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="book.closed" catalog="system" width="115" height="128"/>
-        <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
