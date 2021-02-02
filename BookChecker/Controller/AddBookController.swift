@@ -56,16 +56,20 @@ extension AddBookController: UIDocumentPickerDelegate{
         let sandboxFileUrl = dir.appendingPathComponent(selectedFileUrl.lastPathComponent)
         
         if FileManager.default.fileExists(atPath: sandboxFileUrl.path){
-            print("Already imported!")
+            let alertView = UIAlertController(title: "Invalid", message: "PDF is already imported", preferredStyle: UIAlertController.Style.alert)
+            
+            alertView.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            DispatchQueue.main.async(execute: {()-> Void in
+                self.present(alertView, animated: true, completion: nil)
+            })
             print(selectedFileUrl.lastPathComponent)
 
         } else{
             do{
                 
                 try FileManager.default.copyItem(at: selectedFileUrl, to: sandboxFileUrl)
-                print("Imported pdf file")
                 
-                //bookController.Add(newContent: BookList(booktitle: (selectedFileUrl.lastPathComponent as String?)!))
+                bookController.Add(newContent: BookList(booktitle: (selectedFileUrl.lastPathComponent as String?)!))
                 
             } catch{
                 print("Error \(error)")
@@ -87,9 +91,16 @@ extension AddBookController: URLSessionDownloadDelegate{
         if(url.lastPathComponent.suffix(4) == ".pdf"){
             //save the downloaded file into the project's sandbox
             let destinationPath = docpath.appendingPathComponent(url.lastPathComponent)
+            
             //prevent dup pdf
             if FileManager.default.fileExists(atPath: destinationPath.path){
-                print("Already imported!")
+                let alertView = UIAlertController(title: "Invalid", message: "PDF is already imported", preferredStyle: UIAlertController.Style.alert)
+                
+                alertView.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                DispatchQueue.main.async(execute: {()-> Void in
+                    self.present(alertView, animated: true, completion: nil)
+                })
+                
                 print(destinationPath.lastPathComponent)
 
             } else{
@@ -106,6 +117,7 @@ extension AddBookController: URLSessionDownloadDelegate{
             }
         }
         else if (url.lastPathComponent.suffix(4) != ".pdf"){
+            //alert user when pdf url is incorrect
             let alertView = UIAlertController(title: "Invalid", message: "Website link must end with .pdf", preferredStyle: UIAlertController.Style.alert)
             
             alertView.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
