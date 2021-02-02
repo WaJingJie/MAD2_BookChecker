@@ -12,12 +12,14 @@ class ContentController{
     
     var appDelegate:AppDelegate
     let context:NSManagedObjectContext
-
+    
+    //Initialize Variables
     init() {
         appDelegate  = (UIApplication.shared.delegate) as! AppDelegate
         context = appDelegate.persistentContainer.viewContext
     }
     
+    //To Add a New Content
     func Add(newContent:ItemList){
         let entity = NSEntityDescription.entity(forEntityName: "CDToDoList", in: context)!
         

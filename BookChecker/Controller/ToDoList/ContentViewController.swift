@@ -25,6 +25,7 @@ class ContentViewController: UIViewController{
         txt_Content.text = contentView?.listContent
     }
     
+    //For Editting the value of the selected row
     @IBAction func btn_Edit(_ sender: Any) {
         if(txt_Title.text != ""){
             let c:ItemList = ItemList(listtitle: txt_Title.text!, listcontent: txt_Content.text!)
@@ -36,11 +37,13 @@ class ContentViewController: UIViewController{
         endSession()
     }
     
+    //For deleting the data from coredata
     @IBAction func btn_Delete(_ sender: Any) {
         contentController.deleteContent(index: itemPath)
         endSession()
     }
     
+    //Dismisses the Segue after each actions
     func endSession() {
         self.dismiss(animated: true) {
             print("Back to main controller")

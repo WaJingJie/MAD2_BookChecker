@@ -27,7 +27,8 @@ class AddContentController: UIViewController{
         
         //Check if Content is Empty
         if(txt_Content.text != ""){
-            contentController.Add(newContent: ItemList(listtitle: txt_Title.text!, listcontent: txt_Content.text!))
+            itemList = ItemList(listtitle: txt_Title.text!, listcontent: txt_Content.text!)
+            contentController.Add(newContent: itemList!)
         }else{
             contentController.Add(newContent: ItemList(listtitle: txt_Title.text!, listcontent: ""))
         }

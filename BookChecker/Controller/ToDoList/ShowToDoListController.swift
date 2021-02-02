@@ -17,7 +17,6 @@ class ShowToDoListController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.reloadData()
         let contents = ContentController().retrieveAllContent()
         itemList = contents
         self.tableView.reloadData()
@@ -34,6 +33,7 @@ class ShowToDoListController: UITableViewController{
         return itemList.count
     }
     
+    // For inputting each coredata row into tableview row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "ContentCell", for: indexPath)
         let items = itemList[indexPath.row]
@@ -42,7 +42,7 @@ class ShowToDoListController: UITableViewController{
         return cell
     }
     
-    // clickable sections
+    // Upon Selecting the row will bring the user to a segue
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         contentToSend = itemList[indexPath.row]
         itemPath = indexPath.item
