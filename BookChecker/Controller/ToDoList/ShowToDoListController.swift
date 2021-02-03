@@ -14,17 +14,35 @@ class ShowToDoListController: UITableViewController{
     var contentToSend: ItemList?
     var itemPath:Int!
     let contentController:ContentController = ContentController();
+    var refresher = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        self.tableView.addSubview(refresher)
         let contents = ContentController().retrieveAllContent()
         itemList = contents
         self.tableView.reloadData()
     }
     
+    @objc func refresh(_ sender: AnyObject){
+        let contents = ContentController().retrieveAllContent()
+        itemList = contents
+        self.tableView.reloadData()
+        refresher.endRefreshing()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         self.tableView.reloadData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let contents = ContentController().retrieveAllContent()
+        itemList = contents
+        self.tableView.reloadData()
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

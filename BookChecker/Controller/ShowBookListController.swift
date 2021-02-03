@@ -25,6 +25,13 @@ class ShowBookListController: UITableViewController{
     override func viewDidAppear(_ animated: Bool) {
         self.tableView.reloadData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let contents = BookController().retrieveAllContent()
+        bookList = contents
+        self.tableView.reloadData()
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
